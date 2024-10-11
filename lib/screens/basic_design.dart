@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -20,7 +20,9 @@ class BasicDesignScreen extends StatelessWidget {
           // Description
           Container(
             margin: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-            child: Text('Lore ipsum'),
+            child: Text('''Beauclair es la ciudad capital de Toussaint que rodea el Palacio de Beauclair. Probablemente fue construido cuando Peter Faramond reconstruyó el palacio y la duquesa Adela Marta se convirtió en la primera dama del mismo. 
+            
+La ciudad está compuesta por mercaderes, bardos, viajeros, nobles, ciudadanos corrientes, caballeros y la propia realeza del ducado. '''),
           )
         ]
       ),
@@ -57,7 +59,7 @@ class Title extends StatelessWidget {
             Icons.star,
             color: Colors.red,
           ),
-          Text('41'),
+          Text('4,8/5'),
         ],
       ),
     );
