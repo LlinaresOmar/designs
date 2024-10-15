@@ -1,4 +1,6 @@
 import 'package:designs/widgets/background.dart';
+import 'package:designs/widgets/card_table.dart';
+import 'package:designs/widgets/custom_bottom_navigation.dart';
 import 'package:designs/widgets/pageTitle.dart';
 import 'package:flutter/material.dart';
 
@@ -9,14 +11,15 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
        children: [
         Background(),
-        HomeBody(),
+        _HomeBody(),
        ],
       ),
+      bottomNavigationBar: CustomBottomNavigation(),
     );
   }
 }
 
-class HomeBody extends StatelessWidget {
+class _HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +27,7 @@ class HomeBody extends StatelessWidget {
       child: Column(
         children: [
           PageTitle(),
+          CardTable()
         ],
       ),
     );
